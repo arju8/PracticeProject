@@ -1,0 +1,16 @@
+JvmtiExport can_access_local_variables 0
+JvmtiExport can_hotswap_or_post_breakpoint 0
+JvmtiExport can_post_on_exceptions 0
+# 122 ciObject found
+ciMethod java/lang/String regionMatches (ZILjava/lang/String;II)Z 1961 401 5366 0 -1
+ciMethod java/lang/Character toLowerCase (C)C 2057 1 13347 0 0
+ciMethod java/lang/Character toLowerCase (I)I 4097 1 29922 0 0
+ciMethod java/lang/Character toUpperCase (C)C 2097 1 8601 0 0
+ciMethod java/lang/Character toUpperCase (I)I 2097 1 8605 0 0
+ciMethod java/lang/CharacterData toLowerCase (I)I 0 0 1 0 -1
+ciMethod java/lang/CharacterData toUpperCase (I)I 0 0 1 0 -1
+ciMethod java/lang/CharacterData of (I)Ljava/lang/CharacterData; 4097 1 5634 0 96
+ciMethod java/lang/CharacterDataLatin1 getProperties (I)I 4097 1 28353 0 0
+ciMethod java/lang/CharacterDataLatin1 toLowerCase (I)I 4097 1 5876 0 144
+ciMethod java/lang/CharacterDataLatin1 toUpperCase (I)I 3105 1 5519 0 176
+ciMethodData java/lang/Character toLowerCase (I)I 2 29922 orig 264 240 148 251 115 0 0 0 0 224 105 146 17 0 0 0 0 136 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 77 68 79 32 101 120 116 114 97 32 100 97 116 97 32 108 111 99 107 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 17 151 3 0 1 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 3 0 2 0 0 0 64 0 0 0 254 255 255 255 2 0 1 0 0 0 0 0 data 8 0x10002 0x72e2 0x50005 0x0 0x13220310 0x72e2 0x0 0x0 oops 1

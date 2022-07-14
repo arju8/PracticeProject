@@ -1,0 +1,5 @@
+StepDefinitions\FbLoginSteps.class
+StepDefinitions\Runner.class
+StepDefinitions\FacebookSteps.class
+Pages\FbLogin.class
+StepDefinitions\LoginSteps.class
