@@ -1,5 +1,7 @@
 package com.pomrunner;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
@@ -9,10 +11,12 @@ import com.pom.BookHotel;
 import com.pom.LogOut;
 import com.pom.SearchHotel;
 import com.pom.SelectHotel;
+import com.propertyfile.ConfigurationReader;
+import com.propertyfile.FileReaderManager;
 
 public class AdactinRunner extends BaseClass {
 	public static WebDriver driver;
-	public static void main(String[] args) throws InterruptedException {
+	public static void main(String[] args) throws InterruptedException, IOException {
 
 
 		driver=browserlaunch("chrome");
@@ -23,8 +27,9 @@ public class AdactinRunner extends BaseClass {
 		LogOut logO= new LogOut(driver);
 
 
+
 		//login page
-		url("https://adactinhotelapp.com/");
+		url(FileReaderManager.getInstanceCr().getUrl()); 
 		WebElement username = aL.getUsername();
 		sendKey(username, "arjunan08");
 		WebElement password = aL.getPassword();
@@ -83,25 +88,25 @@ public class AdactinRunner extends BaseClass {
 
 		WebElement creditType = bH.getCreditType();
 		dropD(creditType, "text", "VISA");
-		
+
 		WebElement expMonth = bH.getExpMonth();
 		dropD(expMonth, "text", "February");
-		
-		
+
+
 		WebElement expYear = bH.getExpYear();
 		dropD(expYear, "text", "2022");
-		
+
 		WebElement cvv = bH.getCvv();
 		sendKey(cvv, "123");
-		
+
 		WebElement bookNowBtn = bH.getBookNowBtn();
 		clickElement(bookNowBtn);
-		
+
 		//logOut
 
 		WebElement logOut = logO.getLogOut();
 		clickElement(logOut);
-		
+
 
 	}
 
