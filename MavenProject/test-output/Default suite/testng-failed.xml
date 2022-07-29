@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.Testng_DependsOn">
+      <class name="com.testng.TestNG_CrossBrowser">
         <methods>
-          <include name="cMethod"/>
-          <include name="aMethod"/>
-          <include name="dMethod"/>
-          <include name="bMethod"/>
+          <include name="afterlogin"/>
+          <include name="launchbrowser"/>
+          <include name="loginFB"/>
+          <include name="login"/>
+          <include name="quitBrowser"/>
         </methods>
-      </class> <!-- com.testng.Testng_DependsOn -->
+      </class> <!-- com.testng.TestNG_CrossBrowser -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

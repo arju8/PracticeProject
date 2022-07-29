@@ -14,6 +14,7 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -28,7 +29,8 @@ public class BaseClass {
 		}
 		else if (browser.equalsIgnoreCase("firefox")) {
 			//firefox browser
-
+			System.setProperty("webdriver.gecko.driver", "C:\\Users\\welcome\\git\\GreensProject\\MavenProject\\drivers\\geckodriver.exe");
+			driver=new FirefoxDriver();
 		}
 		else {
 			System.out.println("invalid browser");
@@ -189,6 +191,6 @@ public class BaseClass {
 
 	}
 	public static void attribute(WebElement element,String name) {
-	System.out.println(element.getAttribute(name));//check this
+		System.out.println(element.getAttribute(name));//check this
 	}
 }

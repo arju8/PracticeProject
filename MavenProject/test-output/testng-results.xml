@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-28T10:01:06 GMT-07:00" name="Default suite" finished-at="2022-07-28T10:01:06 GMT-07:00" duration-ms="139">
+  <suite started-at="2022-07-29T10:12:24 GMT-07:00" name="Suite" finished-at="2022-07-29T10:13:00 GMT-07:00" duration-ms="35779">
     <groups>
     </groups>
-    <test started-at="2022-07-28T10:01:06 GMT-07:00" name="Default test" finished-at="2022-07-28T10:01:06 GMT-07:00" duration-ms="139">
-      <class name="com.testng.DataProvider">
-        <test-method signature="datas(java.lang.String, java.lang.String)[pri:0, instance:com.testng.DataProvider@d706f19]" started-at="2022-07-28T10:01:06 GMT-07:00" name="datas" data-provider="data" finished-at="2022-07-28T10:01:06 GMT-07:00" duration-ms="27" status="PASS">
+    <test started-at="2022-07-29T10:12:24 GMT-07:00" name="ChromeTest" finished-at="2022-07-29T10:12:38 GMT-07:00" duration-ms="13244">
+      <class name="com.testng.TestNG_CrossBrowser">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:25 GMT-07:00" name="launchbrowser" finished-at="2022-07-29T10:12:26 GMT-07:00" duration-ms="1875" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="loginFB()[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:26 GMT-07:00" name="loginFB" finished-at="2022-07-29T10:12:29 GMT-07:00" duration-ms="2956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFB -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:29 GMT-07:00" name="login" data-provider="data" finished-at="2022-07-29T10:12:30 GMT-07:00" duration-ms="335" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -16,46 +31,161 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[1234]]>
+                <![CDATA[12345]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datas -->
-        <test-method signature="datas(java.lang.String, java.lang.String)[pri:0, instance:com.testng.DataProvider@d706f19]" started-at="2022-07-28T10:01:06 GMT-07:00" name="datas" data-provider="data" finished-at="2022-07-28T10:01:06 GMT-07:00" duration-ms="3" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterlogin()[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:30 GMT-07:00" name="afterlogin" finished-at="2022-07-29T10:12:30 GMT-07:00" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterlogin -->
+        <test-method is-config="true" signature="loginFB()[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:30 GMT-07:00" name="loginFB" finished-at="2022-07-29T10:12:33 GMT-07:00" duration-ms="2915" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFB -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:33 GMT-07:00" name="login" data-provider="data" finished-at="2022-07-29T10:12:33 GMT-07:00" duration-ms="307" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[arjuna]]>
+                <![CDATA[arju]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[123456]]>
+                <![CDATA[123654]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datas -->
-        <test-method signature="datas(java.lang.String, java.lang.String)[pri:0, instance:com.testng.DataProvider@d706f19]" started-at="2022-07-28T10:01:06 GMT-07:00" name="datas" data-provider="data" finished-at="2022-07-28T10:01:06 GMT-07:00" duration-ms="4" status="PASS">
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterlogin()[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:33 GMT-07:00" name="afterlogin" finished-at="2022-07-29T10:12:33 GMT-07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterlogin -->
+        <test-method is-config="true" signature="loginFB()[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:33 GMT-07:00" name="loginFB" finished-at="2022-07-29T10:12:37 GMT-07:00" duration-ms="4297" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFB -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:37 GMT-07:00" name="login" data-provider="data" finished-at="2022-07-29T10:12:38 GMT-07:00" duration-ms="313" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[arjun]]>
+                <![CDATA[jbrhwvrw]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[1234]]>
+                <![CDATA[125455]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datas -->
-      </class> <!-- com.testng.DataProvider -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterlogin()[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:38 GMT-07:00" name="afterlogin" finished-at="2022-07-29T10:12:38 GMT-07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterlogin -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.testng.TestNG_CrossBrowser@96def03]" started-at="2022-07-29T10:12:38 GMT-07:00" name="quitBrowser" finished-at="2022-07-29T10:12:38 GMT-07:00" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.testng.TestNG_CrossBrowser -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2022-07-29T10:12:38 GMT-07:00" name="fireFoxTest" finished-at="2022-07-29T10:13:00 GMT-07:00" duration-ms="22502">
+      <class name="com.testng.TestNG_CrossBrowser">
+        <test-method is-config="true" signature="launchbrowser(java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:38 GMT-07:00" name="launchbrowser" finished-at="2022-07-29T10:12:43 GMT-07:00" duration-ms="5017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchbrowser -->
+        <test-method is-config="true" signature="loginFB()[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:43 GMT-07:00" name="loginFB" finished-at="2022-07-29T10:12:44 GMT-07:00" duration-ms="1609" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFB -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:44 GMT-07:00" name="login" data-provider="data" finished-at="2022-07-29T10:12:47 GMT-07:00" duration-ms="3088" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arjunan]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterlogin()[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:47 GMT-07:00" name="afterlogin" finished-at="2022-07-29T10:12:47 GMT-07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterlogin -->
+        <test-method is-config="true" signature="loginFB()[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:47 GMT-07:00" name="loginFB" finished-at="2022-07-29T10:12:49 GMT-07:00" duration-ms="1737" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFB -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:49 GMT-07:00" name="login" data-provider="data" finished-at="2022-07-29T10:12:55 GMT-07:00" duration-ms="5326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[arju]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123654]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterlogin()[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:55 GMT-07:00" name="afterlogin" finished-at="2022-07-29T10:12:55 GMT-07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterlogin -->
+        <test-method is-config="true" signature="loginFB()[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:55 GMT-07:00" name="loginFB" finished-at="2022-07-29T10:12:56 GMT-07:00" duration-ms="1531" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFB -->
+        <test-method signature="login(java.lang.String, java.lang.String)[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:56 GMT-07:00" name="login" data-provider="data" finished-at="2022-07-29T10:12:59 GMT-07:00" duration-ms="2717" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[jbrhwvrw]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[125455]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="afterlogin()[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:59 GMT-07:00" name="afterlogin" finished-at="2022-07-29T10:12:59 GMT-07:00" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterlogin -->
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.testng.TestNG_CrossBrowser@22a637e7]" started-at="2022-07-29T10:12:59 GMT-07:00" name="quitBrowser" finished-at="2022-07-29T10:13:00 GMT-07:00" duration-ms="1464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- com.testng.TestNG_CrossBrowser -->
+    </test> <!-- fireFoxTest -->
+  </suite> <!-- Suite -->
 </testng-results>
