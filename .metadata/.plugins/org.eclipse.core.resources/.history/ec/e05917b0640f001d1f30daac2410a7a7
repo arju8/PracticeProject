@@ -1,0 +1,11 @@
+package com.practice;
+
+public class IntrvwProgram {
+	public static void main(String[] args) {
+		String s="iyefgyigfeyfgy10wrbhbr100bvhe4";
+		
+		String replaceAll = s.replaceAll("\\D", " ");
+		System.out.println(replaceAll);
+	}
+
+}

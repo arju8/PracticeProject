@@ -1,0 +1,19 @@
+package com.adactin.stepdef;
+
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import com.Base.BaseClass;
+import com.adactin.runner.AdactinRunnerCucu;
+import com.sdp.ProjectObjectManager;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class StepDefinition extends BaseClass{
+
+	
+
+}

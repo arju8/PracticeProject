@@ -1,0 +1,25 @@
+package com.practice;
+
+public class PrimeNumbers {
+	public static void checkPrime() {
+       int n=8;
+       
+      boolean flag=true;
+       for(int i=2;i<n;i++) {
+    	   
+    	   if(i%n==0) {
+    		   flag=false;
+    	   }
+       }
+       if(flag==true) {
+    	   System.out.println("prime"+n);
+       }
+       else {
+    	   System.out.println("notprime"+n);
+       }
+	}
+	public static void main(String[] args) {
+		checkPrime();
+	}
+
+}

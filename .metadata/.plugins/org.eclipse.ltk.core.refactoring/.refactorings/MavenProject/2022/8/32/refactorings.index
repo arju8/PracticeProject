@@ -1,0 +1,8 @@
+1659431143859	Extract local variable 'findElement'
+1659444279314	Extract local variable 'findElements'
+1659444409706	Extract local variable 'text'
+1659456472044	Extract local variable 'url'
+1659456992744	Extract local variable 'username'
+1659457202556	Extract local variable 'location'
+1659459790881	Extract local variable 'url'
+1659462985016	Extract local variable 'url'

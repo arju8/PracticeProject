@@ -1,0 +1,8 @@
+package com.testng;
+
+public class TestNG_CrossBrowser {
+ private void launchbrowser() {
+	// TODO Auto-generated method stub
+
+}
+}

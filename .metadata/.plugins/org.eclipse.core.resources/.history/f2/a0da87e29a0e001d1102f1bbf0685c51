@@ -1,0 +1,13 @@
+package com.practice;
+
+import java.util.stream.IntStream;
+
+public class practice {
+	public static void main(String[] args) {
+		String s="nianahdefuiefui10jh46100nbii14";
+		String replaceAll = s.replaceAll("[^0-9]","0");
+		System.out.println(replaceAll);
+         IntStream chars = replaceAll.chars();
+         System.out.println(chars);
+	}
+}

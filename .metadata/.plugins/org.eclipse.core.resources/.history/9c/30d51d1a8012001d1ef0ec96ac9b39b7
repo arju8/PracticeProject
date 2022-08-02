@@ -1,0 +1,5 @@
+package com.adactin.stepdef;
+
+public class StepDefinition {
+
+}

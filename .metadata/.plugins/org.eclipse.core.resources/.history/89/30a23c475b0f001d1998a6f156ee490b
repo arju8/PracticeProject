@@ -1,0 +1,40 @@
+package com.testng;
+
+import org.openqa.selenium.By;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+import com.Base.BaseClass;
+
+public class TestNG_CrossBrowser extends BaseClass {
+	@Parameters({"browsers"})
+	@BeforeClass
+	public void launchbrowser(String browserName) {
+		if (browserName.equalsIgnoreCase("chrome")) {
+			browserlaunch("chrome");
+		}
+		else if (browserName.equalsIgnoreCase("firefox")) {
+			browserlaunch("firefox");
+		}
+         url("https://www.facebook.com/login/");
+         driver.manage().window().maximize();
+
+	}
+	@Parameters({"username","password"})
+     @Test
+	public void login(String username, String password) {
+    	 
+    	 driver.findElement(By.id("email")).sendKeys(username);
+    	 driver.findElement(By.id("pass")).sendKeys(password);
+    	 driver.findElement(By.id("loginbutton")).click();
+    	 
+
+	}
+     @AfterClass
+	public void quitBrowser() {
+    	 driver.quit();
+
+	}
+}

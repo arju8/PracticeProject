@@ -1,0 +1,26 @@
+package com.ipt;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
+
+import com.Base.BaseClass;
+
+public class Myntra extends BaseClass {
+	public static void main(String[] args) {
+		
+		browserlaunch("chrome");
+		url("https://www.myntra.com/?utm_source=perf_google_search_brand&utm_medium=perf_google_search_brand&utm_campaign=Search%20-%20Myntra%20Brand%20(India)&gclid=CjwKCAjwlqOXBhBqEiwA-hhitJmtVTInagUGJWerng5hiS0_IHOI_FtG2YHZ8ICJlxrwlvLszvv_whoCSWEQAvD_BwE");
+		WebElement findElement = driver.findElement(By.xpath("//div[@data-reactid=\"333\"]/div/a"));
+		Actions act= new Actions(driver);
+		act.moveToElement(findElement);
+		clickElement(driver.findElement(By.xpath("//div[@data-reactid=\"334\"]/div/div/div/li[@data-reactid=\"340\"]/ul/li[@data-reactid=\"344\"]/a")));
+		
+		
+		
+		//li[@class='product-base']/a/div[@class="product-productMetaInfo"]/div[@class="product-price"]/span/span[@class="product-discountedPrice"]
+	}
+	
+
+
+}

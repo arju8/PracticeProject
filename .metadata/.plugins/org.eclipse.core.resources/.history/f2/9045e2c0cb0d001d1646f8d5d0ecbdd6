@@ -1,0 +1,43 @@
+package com.practice;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class VowelsProgram {
+	public static void vowelsCount() {
+		String s="welcometojavaclass";
+
+		int vowel=0;
+		int nonVowel=0;
+
+		Map<Character, Integer> vowelMap=new HashMap<>();
+		Map <Character, Integer> nonVowelMap=new HashMap<>();
+
+		for (int i = 0; i <s.length(); i++) {
+			char c = s.charAt(i);
+			if (c=='a'||c=='A'||c=='e'||c=='E'||c=='i'||c=='I'||c=='o'||c=='O'||c=='u'||c=='U') {
+				if(vowelMap.get(c)==null) {
+					vowelMap.put(c, 1);
+				}
+				else {
+					Integer integer =vowelMap.get(c);
+					vowelMap.put(c, integer+1);
+
+				}
+				vowel++;
+
+			}
+			
+			//		System.out.println(nonVowelMap);
+			//		System.out.println(nonVowel);
+
+
+		}
+		System.out.println(vowelMap);
+		System.out.println(vowel);
+	}
+
+	public static void main(String[] args) {
+		vowelsCount();
+	}
+}

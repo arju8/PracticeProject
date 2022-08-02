@@ -1,0 +1,6 @@
+Feature: Adactin Hotel Application
+Scenario: Login Functionality
+Given user Launch The Adactin Application
+When user Enter The Username In The InputField
+And user Enter The Password In The InputField
+Then user Click On The Login Button And It Navigates To The Searchpage
