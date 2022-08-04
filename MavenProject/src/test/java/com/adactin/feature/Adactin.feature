@@ -1,4 +1,5 @@
 Feature: Adactin Hotel Application
+@smoketest
 Scenario: Login Functionality
 Given user Launch The Adactin Application
 When user Enter The Username In The InputField
