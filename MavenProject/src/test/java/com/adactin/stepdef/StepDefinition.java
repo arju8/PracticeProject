@@ -3,6 +3,7 @@ package com.adactin.stepdef;
 
 import java.io.IOException;
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -43,6 +44,10 @@ public class StepDefinition extends BaseClass{
 	public void user_Click_On_The_Login_Button_And_It_Navigates_To_The_Searchpage() {
 		WebElement loginBtn = pom.getLogIn().getLoginBtn();
 		clickElement(loginBtn);
+		String url ="https://adactinhotelapp.com/SearchHotel.php";
+		
+		Assert.assertEquals(url, driver.getCurrentUrl());
+		System.out.println("url equals");
 	}
 
 	@When("^user Select the Location From The DropDown$")

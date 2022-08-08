@@ -36,6 +36,7 @@ public class AdactinRunner extends BaseClass {
 		sendKey(password, "arju12345");
 		WebElement loginBtn = aL.getLoginBtn();
 		clickElement(loginBtn);
+		
 
 		//search hotel page
 		WebElement location = ht.getLocation();

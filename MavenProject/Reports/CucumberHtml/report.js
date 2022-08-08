@@ -44,29 +44,30 @@ formatter.match({
   "location": "StepDefinition.user_Launch_The_Adactin_Application()"
 });
 formatter.result({
-  "duration": 19006579100,
+  "duration": 15136820800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Enter_The_Username_In_The_InputField()"
 });
 formatter.result({
-  "duration": 127387400,
+  "duration": 129829200,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Enter_The_Password_In_The_InputField()"
 });
 formatter.result({
-  "duration": 83195400,
+  "duration": 88179100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Click_On_The_Login_Button_And_It_Navigates_To_The_Searchpage()"
 });
 formatter.result({
-  "duration": 2547489500,
-  "status": "passed"
+  "duration": 1042925700,
+  "error_message": "org.junit.ComparisonFailure: expected:\u003c...actinhotelapp.com/Se[]rchHotel.php\u003e but was:\u003c...actinhotelapp.com/Se[a]rchHotel.php\u003e\r\n\tat org.junit.Assert.assertEquals(Assert.java:117)\r\n\tat org.junit.Assert.assertEquals(Assert.java:146)\r\n\tat com.adactin.stepdef.StepDefinition.user_Click_On_The_Login_Button_And_It_Navigates_To_The_Searchpage(StepDefinition.java:49)\r\n\tat ✽.Then user Click On The Login Button And It Navigates To The Searchpage(Adactin.feature:7)\r\n",
+  "status": "failed"
 });
 formatter.scenario({
   "line": 9,
@@ -125,63 +126,63 @@ formatter.match({
   "location": "StepDefinition.user_Select_the_Location_From_The_DropDown()"
 });
 formatter.result({
-  "duration": 177332700,
+  "duration": 187737000,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Select_the_Hotel_From_DropDown()"
 });
 formatter.result({
-  "duration": 159522000,
+  "duration": 165744400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Select_The_Room_Type_From_DropDown()"
 });
 formatter.result({
-  "duration": 136650700,
+  "duration": 139702800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Select_The_No_Of_Room_From_DropDown()"
 });
 formatter.result({
-  "duration": 141388600,
+  "duration": 143687700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Chooses_The_Checkin_Date()"
 });
 formatter.result({
-  "duration": 77107500,
+  "duration": 70202900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Chooses_The_Check_OUt_Date()"
 });
 formatter.result({
-  "duration": 87785400,
+  "duration": 79583700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Selects_The_Adult_Per_Room_From_DropDown()"
 });
 formatter.result({
-  "duration": 162785300,
+  "duration": 140340100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Selects_The_Child_Per_Room_From_DropDown()"
 });
 formatter.result({
-  "duration": 133087100,
+  "duration": 143448100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Clicks_On_The_Search_Button_and_Navigates_To_Select_Hotel_Page()"
 });
 formatter.result({
-  "duration": 656732400,
+  "duration": 767171300,
   "status": "passed"
 });
 formatter.scenario({
@@ -206,14 +207,14 @@ formatter.match({
   "location": "StepDefinition.user_Selects_the_Hotel_By_Clicking_The_Radio_Button()"
 });
 formatter.result({
-  "duration": 65368300,
+  "duration": 75348100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Click_On_The_Continue_Button_And_Navigates_To_Book_A_Hotel_Page()"
 });
 formatter.result({
-  "duration": 675595800,
+  "duration": 719425100,
   "status": "passed"
 });
 formatter.scenario({
@@ -273,63 +274,63 @@ formatter.match({
   "location": "StepDefinition.user_Enters_The_FirstName()"
 });
 formatter.result({
-  "duration": 105529400,
+  "duration": 110766300,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Enters_The_LastName()"
 });
 formatter.result({
-  "duration": 110515000,
+  "duration": 102191000,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Enters_The_Billing_Address()"
 });
 formatter.result({
-  "duration": 97801500,
+  "duration": 117850400,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Enters_The_Credit_Card_Number()"
 });
 formatter.result({
-  "duration": 104831200,
+  "duration": 117108700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Selects_The_Credit_Card_Type_From()"
 });
 formatter.result({
-  "duration": 149599300,
+  "duration": 137478100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Selects_The_Expiry_Month_From_The_DropDown()"
 });
 formatter.result({
-  "duration": 145458200,
+  "duration": 139849700,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Enters_The_Expiry_Year_From_The_DropDown()"
 });
 formatter.result({
-  "duration": 133331700,
+  "duration": 137330100,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Enters_The_Cvv_Number()"
 });
 formatter.result({
-  "duration": 70233300,
+  "duration": 80328900,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Clicks_On_The_Book_Hotel_Button_And_Navigates_To_LogOut_Page()"
 });
 formatter.result({
-  "duration": 61585700,
+  "duration": 65183400,
   "status": "passed"
 });
 formatter.scenario({
@@ -354,14 +355,14 @@ formatter.match({
   "location": "StepDefinition.user_Clicks_ON_The_LogOut_Button()"
 });
 formatter.result({
-  "duration": 382311400,
+  "duration": 392865800,
   "status": "passed"
 });
 formatter.match({
   "location": "StepDefinition.user_Should_LogOUt_SuccessFully()"
 });
 formatter.result({
-  "duration": 99900,
+  "duration": 201000,
   "status": "passed"
 });
 });

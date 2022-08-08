@@ -14,6 +14,7 @@ import com.Base.BaseClass;
 public class Myntra extends BaseClass {
 	static List<Integer> allPricesList=new ArrayList<Integer>();
 	static List<String> allNamesList=new ArrayList<String>();
+	static Integer lp;
 
 	public static void browserlaunch() {
 		browserlaunch("chrome");
@@ -29,14 +30,13 @@ public class Myntra extends BaseClass {
 			Integer price = Integer.valueOf(replace);
 			allPricesList.add(price);
 		}
-
+		 lp = Collections.min(allPricesList);
 		System.out.println("List of prices in Rs."+ allPricesList);
 		System.out.println("Total dresses with Discounted price"+allPricesList.size());
-		System.out.println("Lowest Price"+Collections.min(allPricesList));
+		System.out.println("Lowest Price"+lp);
 
 	}
-	public static void getNameOfLowestPriceProduct() {
-		//all names only finded not the lowest price found
+	public static void getNameOfProduct() {
 		List<WebElement> allProductsName = driver.findElements(By.xpath("//li[@class='product-base']//descendant::span[@class='product-discountedPrice']//ancestor::div[@class='product-productMetaInfo']//h3"));
 		for (WebElement allNames : allProductsName) {
 			String text = allNames.getText();
@@ -46,11 +46,17 @@ public class Myntra extends BaseClass {
 		System.out.println(allNamesList);
 
 	}
+	public static void getNameOfLowestPriceOfProduct(Integer lp) {
+      WebElement LowestProductNAme = driver.findElement(By.xpath("//*[text()='"+lp+"']//ancestor::div[@class='product-productMetaInfo']/h3"));
+      System.out.println("lowestProduct name:"+LowestProductNAme.getText());
+	
+}
+	
 	public static void subtitleBrandName(String xpath) {
 		WebElement subtitle = driver.findElement(By.xpath(xpath));
 		System.out.println(subtitle.getText());
 	}
-	public static void subtitleAndPrice() {
+	public static void subtitle() {
 		List<WebElement> findElements = driver.findElements(By.xpath("//*[@class='product-product' or @span='product-discountedPrice']"));
 		for (WebElement subPrice : findElements) {
 			System.out.println(subPrice.getText());
@@ -61,9 +67,10 @@ public class Myntra extends BaseClass {
 	public static void main(String[] args) {   
 		browserlaunch();
 		getLowestPrice();
-		getNameOfLowestPriceProduct();
+		getNameOfProduct();
 		subtitleBrandName("//h4[text()='Boys Printed Bio Finish T-shirt']//preceding-sibling::h3");
-        subtitleAndPrice();
+        subtitle();
+        getNameOfLowestPriceOfProduct(lp);
 	}
 
 
