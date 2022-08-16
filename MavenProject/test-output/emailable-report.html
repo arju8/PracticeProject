@@ -8,19 +8,22 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Suite</th></tr>
-<tr><td><a href="#t0">ChromeTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,244</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">fireFoxTest</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">22,502</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">6</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">35,746</th><th colspan="2"></th></tr>
+<tr><th colspan="7">Default suite</th></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">3,131</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">ChromeTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testng.TestNG_CrossBrowser</td><td><a href="#m0">login</a></td><td rowspan="3">1659114757750</td><td rowspan="3">313</td></tr><tr class="passedeven"><td><a href="#m1">login</a></td></tr><tr class="passedeven"><td><a href="#m2">login</a></td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">fireFoxTest &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testng.TestNG_CrossBrowser</td><td><a href="#m3">login</a></td><td rowspan="3">1659114764904</td><td rowspan="3">3088</td></tr><tr class="passedeven"><td><a href="#m4">login</a></td></tr><tr class="passedeven"><td><a href="#m5">login</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.testng.Testng_Timeout</td><td><a href="#m0">aMethod</a></td><td rowspan="1">1660460836021</td><td rowspan="1">1023</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.testng.Testng_Timeout</td><td><a href="#m1">bMethod</a></td><td rowspan="1">1660460837079</td><td rowspan="1">1002</td></tr><tr class="passedeven"><td><a href="#m2">cMethod</a></td><td rowspan="1">1660460838083</td><td rowspan="1">1016</td></tr><tr class="passedeven"><td><a href="#m3">dMethod</a></td><td rowspan="1">1660460839101</td><td rowspan="1">1</td></tr></tbody>
 </table>
-<h2>ChromeTest</h2><h3 id="m0">com.testng.TestNG_CrossBrowser#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>jbrhwvrw</td><td>125455</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testng.TestNG_CrossBrowser#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>arjunan</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">com.testng.TestNG_CrossBrowser#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>arju</td><td>123654</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>fireFoxTest</h2><h3 id="m3">com.testng.TestNG_CrossBrowser#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>arjunan</td><td>12345</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.testng.TestNG_CrossBrowser#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>arju</td><td>123654</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">com.testng.TestNG_CrossBrowser#login</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>jbrhwvrw</td><td>125455</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">com.testng.Testng_Timeout#aMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.testng.internal.thread.ThreadTimeoutException: Method com.testng.Testng_Timeout.aMethod() didn&apos;t finish within the time-out 1000
+	at app//org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:60)
+	at app//org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:41)
+	at java.base@11.0.16/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base@11.0.16/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base@11.0.16/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base@11.0.16/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base@11.0.16/java.lang.Thread.run(Thread.java:834)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testng.Testng_Timeout#bMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testng.Testng_Timeout#cMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testng.Testng_Timeout#dMethod</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

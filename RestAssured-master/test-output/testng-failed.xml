@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testng.Testng_Timeout">
+      <class name="rest_assured.concepts.ACommon_Methods">
         <methods>
-          <include name="aMethod"/>
+          <include name="postMethod"/>
         </methods>
-      </class> <!-- com.testng.Testng_Timeout -->
+      </class> <!-- rest_assured.concepts.ACommon_Methods -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
