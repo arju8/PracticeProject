@@ -38,7 +38,7 @@ public class ACommon_Methods {
 
 		String bearerToken="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";
 		Response response= (Response) RestAssured.given()
-				.header("Authentication", "Bearer Token" + bearerToken)
+				.header("Authentication", " Token" + bearerToken)
 				.body("{\r\n"
 						+ "    \"name\":\"NEWREPO8\"\r\n"
 						+ "}")
